@@ -1,19 +1,19 @@
 package datastruct
 
-// Node ...
-type Node struct {
+// LinkedListNode ...
+type LinkedListNode struct {
 	data int
-	next *Node
+	next *LinkedListNode
 }
 
 // LinkList => link list
 type LinkList struct {
-	head *Node
+	head *LinkedListNode
 }
 
 // InsertFirst => insert in first
 func (list *LinkList) InsertFirst(i int) {
-	data := &Node{data: i}
+	data := &LinkedListNode{data: i}
 	if list.head != nil {
 		data.next = list.head
 	}
@@ -23,7 +23,7 @@ func (list *LinkList) InsertFirst(i int) {
 
 // InsertLast => insert in last
 func (list *LinkList) InsertLast(i int) {
-	data := &Node{data: i}
+	data := &LinkedListNode{data: i}
 	if list.head == nil {
 		list.head = data
 		return
