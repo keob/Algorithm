@@ -80,7 +80,7 @@ func (list *LinkList) RemoveByIndex(i int) bool {
 
 	current := list.head
 
-	for u := 1; i < i; u++ {
+	for u := 1; u < i; u++ {
 		if current.next.next == nil {
 			return false
 		}
