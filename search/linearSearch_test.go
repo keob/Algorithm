@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func TestLinearSearcH(t *testing.T) {
+func TestLinearSearch(t *testing.T) {
 	cases := []struct {
 		in       []int
 		target   int
